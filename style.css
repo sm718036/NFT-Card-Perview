@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", serif;
+  color: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.img-container {
+  position: relative;
+}
+.img-container .equilibrium-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.img-container .view-icon {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  display: none;
+}
+.img-container:hover {
+  background-color: hsl(178, 100%, 50%);
+  height: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.img-container:hover > .equilibrium-image {
+  opacity: 0.5;
+}
+.img-container:hover > .view-icon {
+  display: block;
+}
+
+.content-container {
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.content-container .content h2 {
+  margin: 20px 0;
+  font-weight: 500;
+}
+.content-container .content h2:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.content-container .content p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+.content-container .qty-time {
+  margin: 20px 0;
+}
+.content-container .qty-time .ethirium {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .qty-time .ethirium h4 {
+  margin-left: 5px;
+  color: hsl(178, 100%, 50%);
+  font-weight: normal;
+}
+.content-container .qty-time .time {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content-container .qty-time .time h4 {
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+.profile img {
+  width: 10%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.profile h4 {
+  margin-left: 20px;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+}
+.profile h4 span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0%;
+  color: hsl(215, 51%, 70%);
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+  main {
+    width: 300px;
+  }
+  .attribution {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
